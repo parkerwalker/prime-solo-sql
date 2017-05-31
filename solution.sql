@@ -8,4 +8,6 @@ update syntax_practice set account_balance = 10
 where transactions_completed = '0' and account_balance = '0';
 --select all users that have attempted 9 or more transactions
 select username from syntax_practice where transactions_attempted > '9';
+--get username and account balance of the 3 highest users
+select username, account_balance from syntax_practice order by account_balance desc limit 3;
  
