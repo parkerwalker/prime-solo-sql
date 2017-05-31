@@ -17,4 +17,7 @@ select username from syntax_practice where account_balance > '100';
 --add a new record
 insert into syntax_practice (username, city, transactions_completed, transactions_attempted, account_balance)
 values ('parker', 'Minneapolis', 0, 0, 30);
+--The bank is losing money in Miami and Phoenix and needs to unload low transaction customers: Delete users that reside 
+--in miami OR phoenix and have completed fewer than 5 transactions.
+delete from syntax_practice where (city ='phoenix' or city= 'miami') and transactions_completed < 5;
 
