@@ -14,4 +14,7 @@ select username, account_balance from syntax_practice order by account_balance d
 select username, account_balance from syntax_practice order by account_balance asc limit 3;
 --get users with account balances that are more than 100
 select username from syntax_practice where account_balance > '100';
- 
+--add a new record
+insert into syntax_practice (username, city, transactions_completed, transactions_attempted, account_balance)
+values ('parker', 'Minneapolis', 0, 0, 30);
+
