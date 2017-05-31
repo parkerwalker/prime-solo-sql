@@ -10,4 +10,6 @@ where transactions_completed = '0' and account_balance = '0';
 select username from syntax_practice where transactions_attempted > '9';
 --get username and account balance of the 3 highest users
 select username, account_balance from syntax_practice order by account_balance desc limit 3;
+--get username and account balance of the 3 lowest users
+select username, account_balance from syntax_practice order by account_balance asc limit 3;
  
